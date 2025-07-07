@@ -19,8 +19,8 @@ export default function WorkPermitsPage() {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      // Account for fixed header height (approximately 80px)
-      const headerOffset = 80;
+      // Account for fixed header height (header is about 100px tall)
+      const headerOffset = 100;
       const elementPosition = element.getBoundingClientRect().top;
       const offsetPosition =
         elementPosition + window.pageYOffset - headerOffset;
@@ -30,6 +30,11 @@ export default function WorkPermitsPage() {
         behavior: "smooth",
       });
     }
+  };
+
+  const navigateToContact = () => {
+    // Navigate to home page contact section
+    window.location.href = "/#contact";
   };
 
   return (
@@ -233,7 +238,10 @@ export default function WorkPermitsPage() {
                   Get expert guidance on your work permit application and job
                   search.
                 </p>
-                <button className="w-full bg-red-600 text-white py-2 px-4 rounded-lg font-semibold hover:bg-red-700 transition-colors">
+                <button
+                  onClick={navigateToContact}
+                  className="w-full bg-red-600 text-white py-2 px-4 rounded-lg font-semibold hover:bg-red-700 transition-colors"
+                >
                   Book Consultation
                 </button>
               </div>

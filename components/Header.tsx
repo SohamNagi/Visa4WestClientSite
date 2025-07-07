@@ -34,7 +34,7 @@ export default function Header({
       setTimeout(() => {
         const element = document.getElementById(sectionId);
         if (element) {
-          const headerOffset = 80;
+          const headerOffset = 100;
           const elementPosition = element.getBoundingClientRect().top;
           const offsetPosition =
             elementPosition + window.pageYOffset - headerOffset;

@@ -26,6 +26,11 @@ export default function VisitorVisasPage() {
     }
   };
 
+  const navigateToContact = () => {
+    // Navigate to home page contact section
+    window.location.href = "/#contact";
+  };
+
   return (
     <div className="min-h-screen bg-white">
       <Header scrollToSection={scrollToSection} isHomePage={false} />
@@ -247,7 +252,10 @@ export default function VisitorVisasPage() {
                 <p className="text-red-700 text-sm mb-4">
                   Get expert help with your visitor visa application.
                 </p>
-                <button className="w-full bg-red-600 text-white py-2 px-4 rounded-lg font-semibold hover:bg-red-700 transition-colors">
+                <button
+                  onClick={navigateToContact}
+                  className="w-full bg-red-600 text-white py-2 px-4 rounded-lg font-semibold hover:bg-red-700 transition-colors"
+                >
                   Book Consultation
                 </button>
               </div>
