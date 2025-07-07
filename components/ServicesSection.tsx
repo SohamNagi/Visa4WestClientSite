@@ -80,7 +80,7 @@ export default function ServicesSection() {
           {services.map((service, index) => (
             <Link href={service.href} key={index}>
               <motion.div
-                className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer"
+                className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer h-80 flex flex-col"
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
@@ -90,10 +90,10 @@ export default function ServicesSection() {
                 <div className="w-16 h-16 bg-red-100 rounded-lg flex items-center justify-center mb-6 text-red-600">
                   {service.icon}
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-4">
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">
                   {service.title}
                 </h3>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-lg text-gray-600 leading-relaxed flex-grow">
                   {service.description}
                 </p>
               </motion.div>

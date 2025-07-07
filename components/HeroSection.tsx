@@ -24,6 +24,7 @@ export default function HeroSection({
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8 }}
+          className="relative z-10"
         >
           <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
             Your Trusted Path to <span className="text-red-600">Canada</span>
@@ -33,12 +34,20 @@ export default function HeroSection({
             Canada's immigration system with confidence through our
             CICC-accredited services.
           </p>
-          <button
-            onClick={() => scrollToSection("services")}
-            className="bg-red-600 text-white px-8 py-4 rounded-lg text-lg font-semibold inline-flex items-center space-x-2 shadow-lg hover:bg-red-700 transition-colors"
-          >
-            <span>Start Your Journey</span>
-          </button>
+          <div className="relative z-20">
+            <button
+              onClick={(e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                scrollToSection("services");
+              }}
+              className="bg-red-600 text-white px-8 py-4 rounded-lg text-lg font-semibold shadow-lg hover:bg-red-700 transition-colors cursor-pointer relative z-30 pointer-events-auto"
+              type="button"
+              style={{ position: "relative", zIndex: 1000 }}
+            >
+              Start Your Journey
+            </button>
+          </div>
         </motion.div>
 
         <motion.div

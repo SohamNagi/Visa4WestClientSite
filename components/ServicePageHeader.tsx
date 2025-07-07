@@ -41,7 +41,7 @@ export default function ServicePageHeader({
     <header className="bg-gray-100 text-gray-800 py-12 mt-20 relative overflow-hidden border-b-4 border-gray-300">
       <div className="container mx-auto px-4 relative z-10">
         <Link
-          href="/#home"
+          href="/#services"
           className="inline-flex items-center text-gray-700 hover:text-red-600 mb-6 font-semibold"
         >
           <ArrowLeft size={20} className="mr-2" />
@@ -56,28 +56,6 @@ export default function ServicePageHeader({
           {title}
         </motion.h1>
         <p className="text-xl text-gray-600 font-medium">{subtitle}</p>
-
-        {/* Navigation to main sections */}
-        <div className="mt-8 flex flex-wrap gap-4">
-          <button
-            onClick={() => scrollToHomeSection("about")}
-            className="bg-white px-4 py-2 rounded-lg text-gray-700 hover:text-red-600 transition-colors font-medium shadow-sm hover:shadow-md"
-          >
-            About Us
-          </button>
-          <button
-            onClick={() => scrollToHomeSection("services")}
-            className="bg-white px-4 py-2 rounded-lg text-gray-700 hover:text-red-600 transition-colors font-medium shadow-sm hover:shadow-md"
-          >
-            All Services
-          </button>
-          <button
-            onClick={() => scrollToHomeSection("contact")}
-            className="bg-red-600 text-white px-6 py-2 rounded-lg font-bold hover:bg-red-700 transition-colors shadow-md hover:shadow-lg"
-          >
-            Contact Us
-          </button>
-        </div>
       </div>
     </header>
   );

@@ -9,7 +9,7 @@ export default function ContactSection({
   scrollToSection: (sectionId: string) => void;
 }) {
   return (
-    <section id="contact" className="py-20 bg-white">
+    <section id="contact" className="bg-white">
       <div className="container mx-auto px-4">
         <motion.div
           className="text-center mb-16"
@@ -62,7 +62,7 @@ export default function ContactSection({
                 </div>
                 <div>
                   <p className="font-semibold text-gray-900">Email</p>
-                  <p className="text-gray-600">info@visa4west.ca</p>
+                  <p className="text-gray-600">gurjit@visa4west.ca</p>
                 </div>
               </motion.div>
 

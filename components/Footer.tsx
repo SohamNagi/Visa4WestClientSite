@@ -53,12 +53,12 @@ export default function Footer({
             transition={{ duration: 0.6, delay: 0.1 }}
             viewport={{ once: true }}
           >
-            <h4 className="text-lg font-semibold mb-4">
+            <h4 className="text-lg font-semibold mb-4 hidden sm:block">
               Professional Credentials
             </h4>
             <div className="space-y-4">
-              <div className="flex items-center space-x-4">
-                <div className="relative bg-white rounded-lg border-2 border-gray-300 shadow-md p-3">
+              <div className="flex flex-col sm:flex-row sm:items-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <div className="relative bg-white rounded-lg border-2 border-gray-300 shadow-md p-3 mx-auto sm:mx-0">
                   <Image
                     src="/cicc logo.jpg"
                     alt="CICC Logo"
@@ -67,7 +67,7 @@ export default function Footer({
                     className="object-contain"
                   />
                 </div>
-                <div>
+                <div className="text-center sm:text-left">
                   <p className="font-semibold">CICC Accredited</p>
                   <p className="text-sm text-gray-300">
                     Regulated Canadian Immigration Consultant
