@@ -1,0 +1,109 @@
+{
+    "express-entry": {
+        "processingTime": "6-8 months",
+        "validityPeriod": "Permanent",
+        "fees": {
+            "government": "$1,325 CAD",
+            "biometrics": "$85 CAD",
+            "medical": "$200-400 CAD"
+        },
+        "quickFacts": [
+            "No job offer required",
+            "Points-based system",
+            "Three federal programs",
+            "Online application",
+            "Comprehensive ranking system"
+        ]
+    },
+    "study-permits": {
+        "processingTime": "4-12 weeks",
+        "validityPeriod": "Duration of studies",
+        "fees": {
+            "government": "$150 CAD",
+            "biometrics": "$85 CAD",
+            "medical": "$200-450 CAD"
+        },
+        "quickFacts": [
+            "Need acceptance letter",
+            "Proof of funds required",
+            "Work while studying allowed",
+            "PGWP eligible programs",
+            "Family can accompany"
+        ],
+        "financialRequirements": {
+            "tuition": "$15,000-$50,000/year",
+            "living": "$12,000-$15,000/year",
+            "total": "$27,000-$65,000/year"
+        }
+    },
+    "work-permits": {
+        "processingTime": "2-16 weeks",
+        "validityPeriod": "Up to 4 years",
+        "fees": {
+            "government": "$155 CAD",
+            "biometrics": "$85 CAD",
+            "lmia": "$1,000 CAD"
+        },
+        "quickFacts": [
+            "Job offer usually required",
+            "LMIA may be needed",
+            "Open vs closed permits",
+            "Pathway to PR",
+            "Family can apply"
+        ]
+    },
+    "visitor-visas": {
+        "processingTime": "2-4 weeks",
+        "validityPeriod": "Up to 10 years",
+        "stayDuration": "Up to 6 months",
+        "fees": {
+            "government": "$100 CAD",
+            "biometrics": "$85 CAD",
+            "family": "$500 CAD (family of 5+)"
+        },
+        "quickFacts": [
+            "Single or multiple entry",
+            "Letter of invitation helpful",
+            "Proof of funds required",
+            "Return ticket advised",
+            "Medical exam if required"
+        ]
+    },
+    "family-sponsorship": {
+        "processingTime": "12-24 months",
+        "validityPeriod": "Permanent",
+        "fees": {
+            "sponsorship": "$75 CAD",
+            "principal": "$475 CAD",
+            "dependent": "$150 CAD",
+            "biometrics": "$85 CAD"
+        },
+        "quickFacts": [
+            "Income requirements apply",
+            "Undertaking required",
+            "Eligible relationships only",
+            "Background checks needed",
+            "Medical exams required"
+        ]
+    },
+    "pr-citizenship": {
+        "processingTime": {
+            "pr_renewal": "2-4 months",
+            "citizenship": "12-18 months"
+        },
+        "validityPeriod": "Permanent/Citizenship",
+        "fees": {
+            "pr_card": "$50 CAD",
+            "citizenship_adult": "$630 CAD",
+            "citizenship_minor": "$100 CAD",
+            "right_of_citizenship": "$100 CAD"
+        },
+        "quickFacts": [
+            "PR obligations apply",
+            "Residency requirements",
+            "Language requirements",
+            "Citizenship test required",
+            "Ceremony attendance"
+        ]
+    }
+}
